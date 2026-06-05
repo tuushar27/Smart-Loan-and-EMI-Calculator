@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance EMI Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Advance EMI Calculator</h1>
+    <div>
+        <label for="monthlyIncome">Monthly Income</label>
+        <input type="numnber"  id="montlyIncome" placeholder="eg.80000" min="0">
+    </div>
+
+    <div>
+        <label for="principle">Enter Loan Amount</label>
+        <input type="number" id ="principle" placeholder=" eg. 500000" min="0">
+    </div>
+
+    <div>
+        <label for="interestRate">Interest Rate (%)</label>
+        <input type="number " id="interestRate" placeholder="8.5%" min="0">
+    </div>
+
+    <div>
+        <label for="tenure">Tenure (in years)</label>
+        <input type="number" id="tenureYear" placeholder="7 years" min="0">
+    </div>
+
+    <div>
+        <label for="closureDate">Closure Date</label>
+        <input type="date" id="closureDate">
+    </div>
+
+    <button id="handleCalculate">Calculate Details </button>
+
+    <div>
+        <h2>Standard EMI Amount :</h2>
+    </div>
+
+    <div>
+        <span id="targetMonths">Months to target payment :</span>
+    </div>
+
+    <div>
+        <span id="monthlyExtraPayable">Monthly Extra Payable :</span>
+    </div>
+
+    <div>
+        <span id="totalMonthlyPayable">Total Monthly Payable :</span>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
